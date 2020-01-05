@@ -3,8 +3,8 @@
   background: #1C2022;
   height: 100%;
   display: flex;
-  flex-flow: row-reverse wrap;
-  padding: 50px;
+  flex-flow: row wrap;
+  padding: 20vh 50px;
   justify-content: space-around;
   align-content: center;
   overflow: auto;

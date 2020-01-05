@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function Header() {
+function Header(props) {
   return (
     <div className="header">
-        <p id="headerLeft">Clicky Game</p>
-        <p id="headerMiddle">Click an image to begin!</p>
-        <p id="headerRight">Score: 0 | Top Score: 0</p>
+        <p id="headerLeft">Vampire Clicky Game</p>
+        <p id="headerMiddle">Don't click the same image twice!</p>
+        <p id="headerRight">Score: {props.score} | Top Score: {props.topScore}</p>
     </div>
   );
 }
