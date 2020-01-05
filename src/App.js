@@ -1,6 +1,7 @@
 import React from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
 import friends from "./friends.json";
 import "./App.css";
 
@@ -28,7 +29,7 @@ handleRemoveFriend = filterID => {
 
   render() {
 
-    const friendCardStuff = this.state.friends.map((friend) =>
+    const CharacterCards = this.state.friends.map((friend) =>
       <FriendCard
         name = {friend.name}
         image = {friend.image}
@@ -42,10 +43,16 @@ handleRemoveFriend = filterID => {
     )
     return (
       
-    <Wrapper>
-      {/* <h1 className="title">Friends List</h1> */}
-      {friendCardStuff}
-    </Wrapper>
+    <div>
+
+      
+      <Wrapper>
+      <Header/>
+        {CharacterCards}
+      </Wrapper>
+
+    </div>
+    
   );
   }
 }

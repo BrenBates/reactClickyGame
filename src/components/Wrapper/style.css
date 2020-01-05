@@ -3,9 +3,9 @@
   background: #1C2022;
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row-reverse wrap;
   padding: 50px;
   justify-content: space-around;
-  align-content: flex-start;
+  align-content: center;
   overflow: auto;
 }
