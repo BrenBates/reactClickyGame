@@ -41,8 +41,9 @@ handleRemoveFriend = filterID => {
 
     )
     return (
+      
     <Wrapper>
-      <h1 className="title">Friends List</h1>
+      {/* <h1 className="title">Friends List</h1> */}
       {friendCardStuff}
     </Wrapper>
   );
