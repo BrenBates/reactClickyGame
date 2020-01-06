@@ -2,6 +2,7 @@ import React from "react";
 import VampCard from "./components/VampCard";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import vampires from "./vampires.json";
 import update from "immutability-helper";
 import "./App.css";
@@ -10,6 +11,7 @@ class App extends React.Component {
   state = {
      topScore: 0,
      score: 0,
+     headerText: "Don't click the same image twice!",
      vampires
   }
 
@@ -34,7 +36,8 @@ handleClick = vampireID => {
          
         this.setState({
           score:  this.state.score + 1,
-          vampires: update(this.state.vampires, {[i]: {clicked: {$set: true}}})
+          vampires: update(this.state.vampires, {[i]: {clicked: {$set: true}}}),
+          headerText: "You guessed correct!"
         })
 
 
@@ -44,6 +47,7 @@ handleClick = vampireID => {
           this.setState({
             topScore: this.state.score,
             score: 0,
+            headerText: "You guessed incorrect!",
             vampires
           },
           () => {
@@ -55,6 +59,7 @@ handleClick = vampireID => {
         if(this.state.score <= this.state.topScore){
           this.setState({
             score: 0,
+            headerText: "You guessed incorrect!",
             vampires
           },
           () => {
@@ -104,10 +109,11 @@ shuffleArray = array => {
       
     <div>
 
-    <Header score={this.state.score} topScore = {this.state.topScore}/>
+    <Header score={this.state.score} topScore = {this.state.topScore} headerText = {this.state.headerText}/>
       <Wrapper>
         {shuffledCards}
       </Wrapper>
+    <Footer/>
 
     </div>
     

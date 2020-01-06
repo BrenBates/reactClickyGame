@@ -1,0 +1,12 @@
+.footer {
+    width: 100%;
+    color: #EF2C34;
+    background-color: #393536;
+    box-shadow: 0 -14px 28px red, 0 25px 25px red;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    justify-content: left;
+    
+}
