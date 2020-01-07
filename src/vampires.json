@@ -70,5 +70,31 @@
     "name": "Dracula",
     "image": "https://i.imgur.com/bVajDlM.jpg",
     "clicked": false
+  },
+  {
+    "id": 13,
+    "name": "Vladislav",
+    "image": "https://vignette.wikia.nocookie.net/villains/images/6/6c/Vladislav.png/revision/latest?cb=20190618235726",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "name": "Cage",
+    "image": "https://i1.wp.com/bloody-disgusting.com/wp-content/uploads/2019/03/Dracula-Hammer.jpg?resize=740%2C416&ssl=1",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "name": "underworldguy",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFbclOs6-1XDgd2caZ5GWAVr3N2Iuh5lPp_XoIyCkmdUto2cpMAA&s",
+    "clicked": false
+  },
+  {
+    "id": 16,
+    "name": "johnnydepp",
+    "image": "https://cdn.shopify.com/s/files/1/2645/2620/articles/1_portland_monthly_Dracular_looking_fashinable_1024x1024.jpg?v=1545918779",
+    "clicked": false
   }
+
+
 ]
